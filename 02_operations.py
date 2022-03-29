@@ -54,12 +54,11 @@ bottom_3 = series_N.nsmallest(3)
 # quantiles
 q_1 = series_N.quantile(0.25)
 q_2 = series_N.quantile(0.5)
-
 series_N.round(3)
 
 # method shift
-shift_1 = series_N.shift(1)
-shift_2_replace = series_N(2).fillna(0)
+shift_1 = series.shift(1)
+shift_2_replace_0 = series.shift(2).fillna(0)
 
 # sort
 sorted_series = series.sort_values()
