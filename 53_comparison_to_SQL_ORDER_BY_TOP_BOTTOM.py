@@ -20,3 +20,11 @@ ORDER BY Quantity
 LIMIT 10;
 """
 query = retail.nsmallest(5, columns='Quantity')
+
+# %% sort
+"""
+SELECT * FROM retail
+ORDER BY Quantity DESC
+"""
+query = retail.sort_values('Quantity')
+query2 = retail.sort_values('Quantity', ascending=False)
