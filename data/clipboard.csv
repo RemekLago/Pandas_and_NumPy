@@ -1,0 +1,1 @@
+,clipboard_df.to_csv('./data/clipboard.csv')
